@@ -1,6 +1,16 @@
 * {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 .app {
   background-color: #111;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #111 no-repeat fixed center;
+  background-size: cover;
 }

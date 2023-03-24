@@ -120,7 +120,7 @@ function Banner() {
           </button>
         </div>
         <h1 className="banner__description">
-          {truncate(movie?.overview, 150)}
+          {truncate(movie?.overview, 200)}
         </h1>
         <div className="video__container" ref={videoRef}>
           {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}

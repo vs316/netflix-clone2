@@ -1,5 +1,10 @@
-html {
-  cursor: none;
+@media only screen and (max-width: 768px) {
+  html {
+    cursor: none;
+  }
+  .cursor {
+    display: none;
+  }
 }
 .cursor {
   pointer-events: none;
@@ -9,27 +14,26 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  mix-blend-mode: difference;
   z-index: 1000;
-  transition: transform 0.2s ease-out;
-}
-.cursor__big-ball {
-  width: 30px;
-  height: 30px;
-  border: 2.5px solid darkred;
-  background-color: whitesmoke;
-  border-radius: 100%;
-  opacity: 0.8;
+  width: 15px;
+  height: 15px;
+  border: 5.5px solid #6109558c;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 1;
+  transition: border-color 0.3s ease-out, transform 0.2s ease-out;
 }
 
-.cursor__small-ball {
-  width: 10px;
-  height: 10px;
-  border: 2.5px solid #fff;
-  background-color: white;
-  border-radius: 100%;
-  opacity: 0.9;
-  transition: border-color 1s ease-in-out;
+.cursor__big-ball {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(
+    237,
+    60,
+    60,
+    0.8
+  ); /* Set the background color to a lighter shade of cursor__small-ball */
+  border-radius: 50%; /* Set the opacity to medium */
 }
 
 .hoverable {
@@ -45,9 +49,16 @@ html {
   bottom: -15px;
   left: -15px;
   z-index: -1;
+  transition: transform 0.2s ease-out, opacity 0.3s ease-out;
+  transform-origin: center;
 }
 
 .hoverable:hover:before {
   transform: scale(1.2);
   opacity: 0.1;
+}
+
+.hoverable:hover + .cursor .cursor__ball {
+  border-color: lightcoral;
+  transform: translate(-50%, -50%) scale(4);
 }
