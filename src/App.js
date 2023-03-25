@@ -85,17 +85,13 @@ function App() {
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      <Row
-        title="Action/Adventure TV Shows"
-        fetchUrl={requests.fetchActionMovies}
-      />
+      <Row title="Action" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Crime" fetchUrl={requests.fetchCrimeMovies} />
+      <Row title="Sci-Fi" fetchUrl={requests.fetchSciFiMovies} />
       <Row title="Comedy" fetchUrl={requests.fetchComedyMovies} />
+      <Row title="Fantasy" fetchUrl={requests.fetchFantasyMovies} />
       <Row title="Animation" fetchUrl={requests.fetchAnimationMovies} />
-      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Crime" fetchUrl={requests.fetchCrimeTV} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-      <Row title="Reality TV" fetchUrl={requests.fetchRealityTV} />
-      <Row title="Talk Shows" fetchUrl={requests.fetchTalks} />
+      <Row title="Family" fetchUrl={requests.fetchFamilyMovies} />
     </div>
   );
 }
