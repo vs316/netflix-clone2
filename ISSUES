@@ -2,7 +2,7 @@
 
 Page Loading is Slow.
 Animation and UI could be better.
-Some movies are not embedded with their repective yt Trailer links.
+Most Netflix Originals are not embedded with their repective yt Trailer links because the api is not able to fetch them.
 Button Functionality is minimal.
-Unable to add proper functionality for "Add to List" button due to time constraint and lack of knowledge.
+Unable to add proper functionality for "Add to List" button due to time constraint.
 
